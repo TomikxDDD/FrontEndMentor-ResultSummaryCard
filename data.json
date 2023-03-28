@@ -2,21 +2,79 @@
   {
     "category": "Reaction",
     "score": 80,
-    "icon": "./assets/images/icon-reaction.svg"
+    "icon": "/icon-reaction.svg",
+    "iconAlt": "Reaction logo - ligthning",
+    "backgroundColor": {
+      "r": 255,
+      "g": 0,
+      "b": 0,
+      "a": 0.05
+    },
+    "maxScorePossible": 100
   },
   {
     "category": "Memory",
     "score": 92,
-    "icon": "./assets/images/icon-memory.svg"
+    "icon": "/icon-memory.svg",
+    "iconAlt": "Memory logo - alarmclock",
+    "backgroundColor": {
+      "r": 255,
+      "g": 255,
+      "b": 0,
+      "a": 0.2
+    },
+    "maxScorePossible": 100
   },
   {
     "category": "Verbal",
     "score": 61,
-    "icon": "./assets/images/icon-verbal.svg"
+    "icon": "/icon-verbal.svg",
+    "iconAlt": "Memory logo - alarmclock",
+    "backgroundColor": {
+      "r": 0,
+      "g": 255,
+      "b": 0,
+      "a": 0.2
+    },
+    "maxScorePossible": 100
   },
   {
     "category": "Visual",
     "score": 72,
-    "icon": "./assets/images/icon-visual.svg"
+    "icon": "/icon-visual.svg",
+    "iconAlt": "Memory logo - alarmclock",
+    "backgroundColor": {
+      "r": 0,
+      "g": 0,
+      "b": 255,
+      "a": 0.2
+    },
+    "maxScorePossible": 100
+  },
+  {
+    "category": "Physical",
+    "score": 86,
+    "icon": "/icon-visual.svg",
+    "iconAlt": "Memory logo - alarmclock",
+    "backgroundColor": {
+      "r": 105,
+      "g": 105,
+      "b": 255,
+      "a": 0.2
+    },
+    "maxScorePossible": 100
+  },
+  {
+    "category": "Hearing",
+    "score": 72,
+    "icon": "/icon-visual.svg",
+    "iconAlt": "Memory logo - alarmclock",
+    "backgroundColor": {
+      "r": 255,
+      "g": 0,
+      "b": 255,
+      "a": 0.2
+    },
+    "maxScorePossible": 100
   }
 ]

@@ -4,6 +4,22 @@
   padding: 2rem;
 }
 
+.form-disciplines-number {
+  margin-bottom: 5em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.form-disciplines-number input,
+.form-disciplines-number label {
+  font-size: 2rem;
+}
+
+.form-disciplines-number input {
+  width: 1.5em;
+}
+
 .card {
   background-color: #fefefe;
   box-shadow: 10px 10px 30px 0px #eee;

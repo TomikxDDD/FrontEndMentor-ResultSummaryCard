@@ -3,6 +3,27 @@ import React from "react";
 import DisciplineResultBar from "../components/DisciplineResultBar";
 
 export default function ResultSummaryCard(props) {
+  // Render the given number of disciplines
+  const disciplineResultBars = [];
+  let newDisciplineResultBar;
+  let discipline;
+
+  for (let index = 0; index < props.numOfDisciplines; index++) {
+    discipline = props.data[index];
+    newDisciplineResultBar = (
+      <DisciplineResultBar
+        name={discipline.category}
+        score={discipline.score}
+        logoPath={discipline.icon}
+        logoAlt={discipline.iconAlt}
+        backgroundColor={discipline.backgroundColor}
+        maxScorePossible={discipline.maxScorePossible}
+      />
+    );
+    disciplineResultBars.push(newDisciplineResultBar);
+  }
+  ////////////////////////////////////////////////
+
   return (
     <div className="card row">
       <section className="overall column">
@@ -21,8 +42,11 @@ export default function ResultSummaryCard(props) {
       <section className="discipline-summary column">
         <div className="text__container">
           <h2 className="discipline-summary__h2">Summary</h2>
-          <DisciplineResultBar logoPath="/icon-reaction.svg" logoAlt="Reaction logo - ligthning" backgroundColor={{ r: 255, g: 0, b: 0, a: 0.05 }} name="Reaction" score={80} maxScorePossible={100} />
+          <div className="">{disciplineResultBars}</div>
+          {/* <DisciplineResultBar logoPath="/icon-reaction.svg" logoAlt="Reaction logo - ligthning" backgroundColor={{ r: 255, g: 0, b: 0, a: 0.05 }} name="Reaction" score={80} maxScorePossible={100} />
+
           <DisciplineResultBar logoPath="/icon-memory.svg" logoAlt="Memory logo - alarmclock" backgroundColor={{ r: 255, g: 255, b: 0, a: 0.2 }} name="Memory" score={80} maxScorePossible={100} />
+
           <DisciplineResultBar
             logoPath="/icon-verbal.svg"
             logoAlt="Verbal logo - messenger app logo"
@@ -31,7 +55,8 @@ export default function ResultSummaryCard(props) {
             score={80}
             maxScorePossible={100}
           />
-          <DisciplineResultBar logoPath="/icon-visual.svg" logoAlt="Visual logo - eye" backgroundColor={{ r: 0, g: 0, b: 255, a: 0.2 }} name="Visual" score={80} maxScorePossible={100} />
+
+          <DisciplineResultBar logoPath="/icon-visual.svg" logoAlt="Visual logo - eye" backgroundColor={{ r: 0, g: 0, b: 255, a: 0.2 }} name="Visual" score={80} maxScorePossible={100} /> */}
           <div className="btn summary-result__btn">Continue</div>
         </div>
       </section>
